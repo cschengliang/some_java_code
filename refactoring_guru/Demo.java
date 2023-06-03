@@ -13,13 +13,13 @@ public class Demo {
         director.constructSportsCar(builder);
 
         Car car = builder.getResult();
-        System.out.println("Car build\n"+ car.getCarType());
+        System.out.println("Car build\n" + car.getCarType());
 
         CarManualBuilder manualBuilder = new CarManualBuilder();
 
         director.constructSportsCar(manualBuilder);
         Manual carManual = manualBuilder.getResult();
-        System.out.println("\nCar manual build:\n"+carManual.print());
+        System.out.println("\nCar manual build:\n" + carManual.print());
 
     }
 }

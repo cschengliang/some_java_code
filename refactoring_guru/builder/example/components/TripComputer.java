@@ -8,13 +8,15 @@ public class TripComputer {
     public void setCar(Car car) {
         this.car = car;
     }
-    public void showFuelLevel(){
-        System.out.println("Fuel level: "+car.getFuel());
+
+    public void showFuelLevel() {
+        System.out.println("Fuel level: " + car.getFuel());
     }
-    public void showStatus(){
-        if(this.car.getEngine().isStarted()){
+
+    public void showStatus() {
+        if (this.car.getEngine().isStarted()) {
             System.out.println("Car i started");
-        }else {
+        } else {
             System.out.println("Car isn't started");
         }
     }

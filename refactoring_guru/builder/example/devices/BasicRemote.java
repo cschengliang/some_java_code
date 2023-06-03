@@ -1,18 +1,21 @@
 package refactoring_guru.builder.example.devices;
 
-public class BasicRemote implements Remote{
+public class BasicRemote implements Remote {
     protected Device device;
-    public BasicRemote(){};
-    public BasicRemote(Device device){
+
+    public BasicRemote() {
+    }
+
+    public BasicRemote(Device device) {
         this.device = device;
     }
 
     @Override
     public void power() {
         System.out.println("Remote: power toggle");
-        if(device.isEnabled()){
+        if (device.isEnabled()) {
             device.disable();
-        }else {
+        } else {
             device.enable();
         }
     }

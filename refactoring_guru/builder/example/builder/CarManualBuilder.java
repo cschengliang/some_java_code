@@ -7,7 +7,7 @@ import refactoring_guru.builder.example.components.GPSNavigator;
 import refactoring_guru.builder.example.components.Transmission;
 import refactoring_guru.builder.example.components.TripComputer;
 
-public class CarManualBuilder implements Builder{
+public class CarManualBuilder implements Builder {
     private CarType type;
     private int seats;
     private Engine engine;
@@ -45,7 +45,7 @@ public class CarManualBuilder implements Builder{
         this.seats = seats;
     }
 
-    public Manual getResult(){
-        return new Manual(type,seats,engine,transmission,tripComputer,gpsNavigator);
+    public Manual getResult() {
+        return new Manual(type, seats, engine, transmission, tripComputer, gpsNavigator);
     }
 }

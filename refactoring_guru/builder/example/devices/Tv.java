@@ -1,6 +1,6 @@
 package refactoring_guru.builder.example.devices;
 
-public class Tv implements Device{
+public class Tv implements Device {
     private boolean on = false;
     private int volume = 30;
     private int channel = 1;
@@ -27,7 +27,7 @@ public class Tv implements Device{
 
     @Override
     public void setVolume(int volume) {
-        this.volume = volume%101;
+        this.volume = volume % 101;
     }
 
     @Override

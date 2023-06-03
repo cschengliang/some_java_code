@@ -21,16 +21,17 @@ public class Manual {
         this.tripComputer = tripComputer;
         this.gpsNavigator = gpsNavigator;
     }
-    public String print(){
+
+    public String print() {
         String info = "";
-        info += "Type of car: "+carType+"\n";
-        info += "Count of seats: "+seats+"\n";
-        info += "Engine: volume -"+ engine.getVolume()+"; mileage -"+ engine.getMileage()+"\n";
-        info += "Transmission: "+transmission + "\n";
-        if(this.tripComputer != null){
+        info += "Type of car: " + carType + "\n";
+        info += "Count of seats: " + seats + "\n";
+        info += "Engine: volume -" + engine.getVolume() + "; mileage -" + engine.getMileage() + "\n";
+        info += "Transmission: " + transmission + "\n";
+        if (this.tripComputer != null) {
             info += "GPS Navigator: Functional" + "\n";
-        }else {
-            info += "GPS Navigator: N/A"+"\n";
+        } else {
+            info += "GPS Navigator: N/A" + "\n";
         }
         return info;
     }

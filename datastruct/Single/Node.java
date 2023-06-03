@@ -1,4 +1,5 @@
 package datastruct.Single;
+
 import org.junit.Test;
 
 public class Node {
@@ -10,7 +11,7 @@ public class Node {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         Node node1 = new Node("AA");
         Node node2 = new Node("BB");
         node1.next = node2;

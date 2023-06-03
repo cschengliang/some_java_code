@@ -17,7 +17,8 @@ public class Engine {
     public void off() {
         started = false;
     }
-    public boolean isStarted(){
+
+    public boolean isStarted() {
         return started;
     }
 

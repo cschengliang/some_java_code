@@ -7,7 +7,7 @@ import refactoring_guru.builder.example.components.GPSNavigator;
 import refactoring_guru.builder.example.components.Transmission;
 import refactoring_guru.builder.example.components.TripComputer;
 
-public class CarBuilder implements Builder{
+public class CarBuilder implements Builder {
     private CarType type;
     private int seats;
     private Engine engine;
@@ -17,7 +17,7 @@ public class CarBuilder implements Builder{
 
     @Override
     public void setCarType(CarType type) {
-        this.type =type;
+        this.type = type;
 
     }
 
@@ -45,7 +45,8 @@ public class CarBuilder implements Builder{
     public void setGPSNavigator(GPSNavigator gpsNavigator) {
 
     }
-    public Car getResult(){
-        return new Car(type,seats,engine,transmission,tripComputer,gpsNavigator);
+
+    public Car getResult() {
+        return new Car(type, seats, engine, transmission, tripComputer, gpsNavigator);
     }
 }
