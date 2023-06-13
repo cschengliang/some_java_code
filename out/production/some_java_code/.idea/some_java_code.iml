@@ -20,7 +20,5 @@
     <orderEntry type="library" name="mysql.connector.j" level="project" />
     <orderEntry type="library" name="junit" level="project" />
     <orderEntry type="library" name="alibaba.druid" level="project" />
-    <orderEntry type="library" name="apache.poi" level="project" />
-    <orderEntry type="library" name="apache.poi.ooxml" level="project" />
   </component>
 </module>
